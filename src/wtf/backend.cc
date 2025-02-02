@@ -177,7 +177,7 @@ Gva_t Backend_t::GetArgAddress(const uint64_t Idx) {
     std::abort();
   }
 
-  return Gva_t(Rsp() + (8 + (Idx * 8)));
+  return Gva_t(Rsp() + (Idx * 8));
 }
 
 uint64_t Backend_t::GetArg(const uint64_t Idx) {
